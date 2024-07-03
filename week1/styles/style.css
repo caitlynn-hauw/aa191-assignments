@@ -1,14 +1,13 @@
 /* The * selects everything and acts as a global reset to ensure consistency across browsers */
 * {
-    font-family: Arial, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 0;
-    padding: 0; 
     box-sizing: border-box; 
 }
 
 /* Sets the overall background and ensures the content fits the screen height */
 html{
-    background-color: aqua; 
+    background-color: #FAE0D8; 
 }
 
 html, body {
@@ -35,7 +34,9 @@ main {
 
 /* Assigns each major section to a part of the grid */
 header { 
+    font-size: 50px;
     grid-area: header; 
+    padding-bottom: 30px;
 }
 
 main { 
@@ -46,8 +47,27 @@ main {
     grid-area: portfolio;
     display: flex; /* This will make the items inside the portfolio flex items */
     flex-direction: column; /* This can be row if you want the items to be side by side */
-    justify-content: center; /* This can be flex-start, flex-end, space-between, space-around, space-evenly */
-    align-items: center; /* This can be flex-start, flex-end, stretch, baseline */
+    justify-content: left; /* This can be flex-start, flex-end, space-between, space-around, space-evenly */
+    align-items: left; /* This can be flex-start, flex-end, stretch, baseline */
+}
+
+div.portfolio{
+    padding: 30px;
+    background-color: white;
+    border: 2px solid black;
+}
+
+div.mapArea{
+    padding: 30px;
+    background-color: white;
+    border: 2px solid black;
+}
+
+.mapArea {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: left; 
+    align-items: left; 
 }
 
 #map { 
@@ -55,19 +75,35 @@ main {
     height: 80vh; 
 }
 
+#bio{
+    padding-right: 30px;
+}
+
 footer { 
     grid-area: footer; 
 }
 
 img{
-    max-width: 300px; 
-}
-
-.rapper{
-    background-color: yellowgreen;
+    max-width: 900px; 
+    padding: 30px;
 }
 
 ul{
     padding-left: 30px;
+    font-size: 30px;
+}
+
+ol{
+    padding-left: 30px;
+    font-size: 30px;
+}
+
+h2{
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+
+p{
+    font-size: 30px;
 }
 
