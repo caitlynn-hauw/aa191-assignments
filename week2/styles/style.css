@@ -55,6 +55,7 @@ header {
     padding-top: 20px;
     padding-bottom: 20px;
     margin: 0 -35px;
+    margin-top: 45px;
     width: auto;
 }
 
@@ -125,12 +126,17 @@ img{
     max-width: 140px;
     padding: 0;
     float: left;
+    margin: 0 -35px;
+    margin-left: 2px;
 }
 
 #headertext{
     padding-left: 0px;
     padding-top: 0px;
     padding-bottom: 20px;
+    margin: 0 -35px;
+    margin-left: 150px;
+    margin-top: 50px;
 }
 
 ul{
@@ -148,6 +154,9 @@ h2{
     padding-bottom: 20px;
 }
 
+h4{
+    font-weight: normal;
+}
 p{
     font-size: 30px;
 }

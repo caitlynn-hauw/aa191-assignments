@@ -57,7 +57,7 @@ function addMarker(latitude, longitude, title, message){
     new maplibregl.Marker()
         .setLngLat([longitude, latitude])
         .setPopup(new maplibregl.Popup()
-            .setHTML((`<h2>${title}</h2><h3>${message}</h3>`))
+            .setHTML((`<h3>${title}</h3><h4>${message}</h4>`))
             )
         .addTo(map)
     createButtons(latitude, longitude, title)
